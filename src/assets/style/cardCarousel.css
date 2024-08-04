@@ -6,32 +6,15 @@
     margin: 0 10px;
 }
 
-.slick-prev,
-.slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-
-.slick-prev {
-    left: 0;
-}
-
-.slick-next {
-    right: 0;
-}
-
 .slick-prev.slick-arrow:before,
 .slick-next.slick-arrow:before {
-  display: none !important;
+    display: none !important;
 }
 
 .custom-arrow {
     transition: box-shadow 0.3s ease;
-  }
-  
-  .custom-arrow:hover {
+}
+
+.custom-arrow:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
+}

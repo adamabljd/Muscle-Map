@@ -20,11 +20,27 @@ const CardCarousel = ({ cards }) => {
   const settings = {
     className: "center",
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "50px",
     slidesToShow: 3,
     swipeToSlide: true,
     prevArrow: <Arrow icon="fas fa-chevron-left" />,
     nextArrow: <Arrow icon="fas fa-chevron-right" />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "40px",
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "20px",
+        }
+      }
+    ]
   };
 
   return (

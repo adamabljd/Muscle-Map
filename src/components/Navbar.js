@@ -13,7 +13,7 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
-              <button className="btn dropdown-toggle text-light border-0" data-bs-toggle="dropdown" aria-expanded="false">
+              <button className="btn dropdown-toggle text-light border-0 fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </button>
               <ul className="dropdown-menu">
