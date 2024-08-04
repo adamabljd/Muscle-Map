@@ -1,0 +1,42 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.home-container {
+    min-height: 100vh;
+    background-color: #D4C7AF;
+}
+
+.home-logo {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+}
+
+.home-paragraph {
+    font-size: 1.25rem;
+    color: #FAFAFA;
+}
+
+
+@media (max-width: 576px) {
+    .home-paragraph {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .home-paragraph {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .home-paragraph {
+        font-size: 1.25rem;
+    }
+}
