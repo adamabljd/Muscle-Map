@@ -3,6 +3,8 @@ import logo from '../assets/images/logo_full.png';
 import bp from '../assets/images/image.png';
 import '../assets/style/homepage.css';
 import CardCarousel from '../components/CardCarousel';
+import { HeaderCard } from '../components/HeaderCard';
+import { FullCarousel } from '../components/FullCarousel';
 
 const cards = [
     { title: "Card 1", muscles: "Muscles 1", imgUrl: bp },
@@ -16,7 +18,7 @@ const cards = [
 function Homepage() {
     return (
         <div className="container-fluid home-container">
-            <div className="row align-items-center justify-content-center">
+            <div className="row align-items-center justify-content-center mb-5">
                 <div className="col-12 col-md-5 col-lg-4 col-xl-3 text-center px-5 px-md-3 mt-3 mt-md-5">
                     <img src={logo} alt="Muscle Map" className="img-fluid home-logo" />
                 </div>
@@ -29,8 +31,16 @@ function Homepage() {
                     </p>
                 </div>
             </div>
-            <div className='row mt-5 px-5'>
-                <CardCarousel cards={cards} />
+
+            <div className='row align-items-center justify-content-center mb-5 mt-5 mx-3'>
+                <button className='view-all-btn'>
+                    View All Exercises
+                </button>
+            </div>
+
+
+            <div className='row mt-4 mb-5'>
+                <FullCarousel muscle="HAMSTRING" muscleImg={bp} cards={cards} />
             </div>
         </div>
     );

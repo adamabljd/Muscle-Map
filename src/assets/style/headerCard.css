@@ -1,0 +1,72 @@
+.my-card {
+    max-width: 540px !important;
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A16B5B !important;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.my-card-img {
+    width: auto;
+    max-width: 80px;
+    height: 80px;
+    border-radius: 11px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.my-card-title {
+    color: #FAFAFA;
+}
+
+@media (max-width: 576px) {
+    .my-card-title {
+        font-size: 1.5rem;
+    }
+
+    .my-card-button {
+        padding: 5px 5px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .my-card-title {
+        font-size: 2rem;
+    }
+    .my-card-button {
+        padding: 6px 6px;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .my-card-title {
+        font-size: 2.5rem;
+    }
+
+    .my-card-button {
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+}
+
+.my-card-button {
+    background-color: #C7A771;
+    border: none;
+    border-radius: 10px;
+    color: #FAFAFA;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.my-card-button:hover {
+    background-color: #B99B69;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
