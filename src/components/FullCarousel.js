@@ -6,7 +6,7 @@ export const FullCarousel = ({ muscle, muscleImg, cards }) => {
 
     return (
         <div>
-            <div className='row mb-4 justify-content-center mx-3'>
+            <div className='row mb-4 justify-content-center mx-2'>
                 <HeaderCard title={muscle} imgUrl={muscleImg} />
             </div>
             <div className='row px-5'>

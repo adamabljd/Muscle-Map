@@ -2,7 +2,6 @@ import React from 'react';
 import '../assets/style/headerCard.css';
 
 export const HeaderCard = ({ imgUrl, title }) => {
-
     return (
         <div className="my-card">
             <img src={imgUrl} alt={title} className="my-card-img" />

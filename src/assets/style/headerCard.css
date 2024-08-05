@@ -22,7 +22,18 @@
     color: #FAFAFA;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 375px) {
+    .my-card-title {
+        font-size: 1.1rem;
+    }
+
+    .my-card-button {
+        padding: 5px 5px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
     .my-card-title {
         font-size: 1.5rem;
     }

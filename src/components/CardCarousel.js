@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import Slider from 'react-slick';
 import { Card } from "./Card";
 import '../assets/style/cardCarousel.css';
@@ -44,7 +44,7 @@ const CardCarousel = ({ cards }) => {
   };
 
   return (
-    <div className='slider-container'>
+    <div className='slider-container carousel-slider'>
       <Slider {...settings}>
         {cards.map((card, index) => (
           <div key={index} className="carousel-item">

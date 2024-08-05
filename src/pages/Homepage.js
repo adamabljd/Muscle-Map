@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/logo_full.png';
 import bp from '../assets/images/image.png';
 import '../assets/style/homepage.css';
-import CardCarousel from '../components/CardCarousel';
-import { HeaderCard } from '../components/HeaderCard';
 import { FullCarousel } from '../components/FullCarousel';
 
 const cards = [
@@ -16,6 +14,13 @@ const cards = [
 ];
 
 function Homepage() {
+    const [selectedCard, setSelectedCard] = useState(null);
+
+    const handleCardClick = (card) => {
+        setSelectedCard(card);
+    };
+
+
     return (
         <div className="container-fluid home-container">
             <div className="row align-items-center justify-content-center mb-5">
@@ -32,7 +37,7 @@ function Homepage() {
                 </div>
             </div>
 
-            <div className='row align-items-center justify-content-center mb-5 mt-5 mx-3'>
+            <div className='row align-items-center justify-content-center mb-5 mt-5 mx-2'>
                 <button className='view-all-btn'>
                     View All Exercises
                 </button>
@@ -40,8 +45,9 @@ function Homepage() {
 
 
             <div className='row mt-4 mb-5'>
-                <FullCarousel muscle="HAMSTRING" muscleImg={bp} cards={cards} />
+                <FullCarousel muscle="HAMSTRING" muscleImg={bp} cards={cards}/>
             </div>
+
         </div>
     );
 }

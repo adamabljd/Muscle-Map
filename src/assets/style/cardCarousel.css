@@ -1,20 +1,20 @@
-.slick-list {
-    overflow: visible !important;
+.carousel-slider .slick-list {
+    overflow: visible;
 }
 
-.slick-slide>div {
+.carousel-slider .slick-slide>div {
     margin: 0 10px;
 }
 
-.slick-prev.slick-arrow:before,
-.slick-next.slick-arrow:before {
+.carousel-slider .slick-prev.slick-arrow:before,
+.carousel-slider .slick-next.slick-arrow:before {
     display: none !important;
 }
 
-.custom-arrow {
+.carousel-slider .custom-arrow {
     transition: box-shadow 0.3s ease;
 }
 
-.custom-arrow:hover {
+.carousel-slider .custom-arrow:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
