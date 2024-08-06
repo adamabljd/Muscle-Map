@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../assets/style/card.css';
-
+// {Title, Primary Muscle(image + name), Secondary Muscles(image + name), images, video, instructions}
 export const Card = ({ title, muscles, imgUrl }) => {
     const navigate = useNavigate();
 

@@ -10,14 +10,16 @@
     position: relative;
 }
 
+
 .img-slider .slick-slider .slick-list {
     overflow: hidden !important;
 }
 
-.img-slider .slick-slide img {
-    border-radius: 20px; 
-}
-
 .img-slider .slick-slide>div {
     margin: 0 10px;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    top: 38%;
 }

@@ -42,8 +42,6 @@ function Homepage() {
                     View All Exercises
                 </button>
             </div>
-
-
             <div className='row mt-4 mb-5'>
                 <FullCarousel muscle="HAMSTRING" muscleImg={bp} cards={cards}/>
             </div>
